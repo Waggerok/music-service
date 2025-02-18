@@ -135,14 +135,15 @@ body, html {
 }
 .registration__inputs input {
   width: 300px;
-  height: 40px;
-  border: 1px solid black;
+  height: 45px;
+  border: 2px solid black;
   border-radius: 10px;
   background-color: #5c3083;
 }
 .registration__inputs input:focus {
-  border-color: black;
+  border-color: white;
+  outline: black;
 }
 .registration__button {
-  margin-top: 30px;
+  margin-top: 50px;
 }/*# sourceMappingURL=App.min.css.map */
