@@ -4,8 +4,7 @@ import AppRouter from './Components/AppRouter';
 import Navbar from './Components/Navbar';
 
 
-function App() {
-
+const App : React.FC = () => {
   return (
     <BrowserRouter>
       <Navbar/>

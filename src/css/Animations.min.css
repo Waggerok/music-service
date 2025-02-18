@@ -1,0 +1,22 @@
+@-webkit-keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #8b0ce0;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #8b0ce0;
+  }
+  100% {
+    color: white;
+  }
+}/*# sourceMappingURL=Animations.min.css.map */

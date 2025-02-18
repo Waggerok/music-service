@@ -4,12 +4,12 @@ import RegistrationPage from '../pages/RegistrationPage';
 import UserPage from '../pages/UserPage';
 import MusicPage from '../pages/MusicPage';
 
-const AppRouter = () => {
+const AppRouter : React.FC = () => {
     return (
         <Routes>
             <Route path='/' element={<RegistrationPage/>}></Route>
             <Route path='profile/:id' element={<UserPage/>}></Route>
-            <Route path='music' element={<MusicPage/>}></Route>
+            <Route path='*' element={<MusicPage/>}></Route>
         </Routes>
     )
 }

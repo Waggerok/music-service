@@ -1,1 +1,148 @@
-/*# sourceMappingURL=App.min.css.map */
+@-webkit-keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #8b0ce0;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #8b0ce0;
+  }
+  100% {
+    color: white;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+}
+
+#root {
+  background-color: #1d1d1d;
+}
+
+.menu {
+  background-color: #2f2f2f;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+.menu__navbar_service a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #c5c5c5;
+  font-weight: 700;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.menu__navbar_service a:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #8b0ce0;
+}
+.menu__navbar_service svg {
+  font-size: 20px;
+}
+.menu__navbar_profile a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #c5c5c5;
+  font-weight: 700;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.menu__navbar_profile a:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #8b0ce0;
+}
+.menu__navbar_profile svg {
+  font-size: 20px;
+}
+
+.registration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 400px;
+  background-color: #1f1f1f;
+}
+.registration h1 {
+  -webkit-animation: changeColor 3s infinite;
+          animation: changeColor 3s infinite;
+}
+.registration__inputs {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.registration__inputs input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #5c3083;
+}
+.registration__inputs input:focus {
+  border-color: black;
+}
+.registration__button {
+  margin-top: 30px;
+}/*# sourceMappingURL=App.min.css.map */
