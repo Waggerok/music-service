@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-const RegistrationPage = () => {
+const MusicPage = () => {
     return (
         <></>
     )
 }
 
-export default RegistrationPage;
+export default MusicPage;
