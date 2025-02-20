@@ -28,7 +28,6 @@ const RegistrationPage : React.FC = () => {
 
 
     return (
-        <div className='App'>
             <section className='registration'>
                 <h1>Music App</h1>
                 <form onSubmit={registrateUser} style={{ display : 'flex', flexDirection : 'column', alignItems : 'center' }}>
@@ -61,7 +60,6 @@ const RegistrationPage : React.FC = () => {
                     </div>
                 </form>
             </section>
-        </div>
     )
 }
 

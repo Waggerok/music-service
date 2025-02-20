@@ -6,6 +6,7 @@
     font-weight: 600;
     background-color: #5c3083;
     transition: 0.5s all;
+    min-width: 200px;
 }
 
 .button:hover {
