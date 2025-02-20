@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from '../Components/UI/Button/Button';
 import axios from 'axios';
-import { API } from '../api';
+import { API } from '../API';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -31,7 +31,7 @@ const RegistrationPage : React.FC = () => {
         <div className='App'>
             <section className='registration'>
                 <h1>Music App</h1>
-                <form onSubmit={registrateUser}>
+                <form onSubmit={registrateUser} style={{ display : 'flex', flexDirection : 'column', alignItems : 'center' }}>
                     <div className="registration__inputs">
                         <input 
                             type="text"
