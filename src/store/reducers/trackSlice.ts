@@ -23,11 +23,6 @@ const initialState : ITrackState = {
     error : null
 }
 
-// export const fetchTracks = createAsyncThunk('tracks/fetchTracks', async() => {
-//     const response = await axios.get(`${API}music/getMusic`);
-//     return response.data
-// });
-
 export const fetchTracks = createAsyncThunk("tracks/fetchTracks", async () => {
     const response = await axios.get(`${API}music/getMusic`);
     // console.log(response)

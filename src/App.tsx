@@ -4,6 +4,7 @@ import AppRouter from './Components/AppRouter';
 import Navbar from './Components/Navbar';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import Player from './Components/UI/Player/Player';
 
 
 const App : React.FC = () => {
@@ -12,6 +13,7 @@ const App : React.FC = () => {
       <BrowserRouter>
         <Navbar/>
         <AppRouter/>
+        <Player/>
       </BrowserRouter>
     </Provider>
   )

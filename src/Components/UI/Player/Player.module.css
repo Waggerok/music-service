@@ -1,0 +1,31 @@
+.player {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #373737;
+    gap: 100px;
+    border: 2px solid #8b0ce0;
+    border-radius: 10px;
+}
+
+.player__buttons svg{
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.player__text {
+    color: white;
+}
+
+.player__text_title {
+    font-size: 20px;
+}
+
+.player__text_author {
+    font-size: 12px;
+    text-decoration: underline;
+}
