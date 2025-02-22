@@ -3,6 +3,7 @@ import Button from '../Components/UI/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../store/store';
 import { fetchTracks } from '../store/reducers/trackSlice';
+import Player from '../Components/UI/Player/Player';
 
 const MusicPage : React.FC = () => {
 

@@ -15,17 +15,18 @@ interface ITrackState {
     tracks : ITrack[];
     loading : boolean;
     error : string | null;
+    currentTrack : ITrack | null
 }
 
 const initialState : ITrackState = {
     tracks : [],
     loading : false,
-    error : null
+    error : null,
+    currentTrack : null
 }
 
 export const fetchTracks = createAsyncThunk("tracks/fetchTracks", async () => {
     const response = await axios.get(`${API}music/getMusic`);
-    // console.log(response)
     return response.data.music;
 });
 
@@ -38,6 +39,9 @@ const trackSlice = createSlice({
         },
         deleteTrack : (state,action : PayloadAction<number>) => {
             state.tracks = state.tracks.filter((track) => track.id !== action.payload)
+        },
+        setCurrentTrack : (state,action : PayloadAction<ITrack | null>) => {
+            state.currentTrack = action.payload;
         }
     },
     extraReducers(builder) {
@@ -57,5 +61,5 @@ const trackSlice = createSlice({
     },
 });
 
-export const { addTrack, deleteTrack } = trackSlice.actions;
+export const { addTrack, deleteTrack, setCurrentTrack } = trackSlice.actions;
 export default trackSlice.reducer;
