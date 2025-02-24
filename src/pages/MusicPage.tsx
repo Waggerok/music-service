@@ -2,8 +2,8 @@ import * as React from 'react';
 import Button from '../Components/UI/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, AppDispatch } from '../store/store';
-import { fetchTracks } from '../store/reducers/trackSlice';
-import Player from '../Components/UI/Player/Player';
+import { fetchTracks, setCurrentTrack } from '../store/reducers/trackSlice';
+import Track from '../Components/UI/Track/Track';
 
 const MusicPage : React.FC = () => {
 
@@ -14,6 +14,13 @@ const MusicPage : React.FC = () => {
         dispatch(fetchTracks())
     }, [dispatch])
 
+    const handleTrackClick = (trackId : number) => {
+        const selectedTrack = tracks.find(track => track.id === trackId);
+        if (selectedTrack) {
+            dispatch(setCurrentTrack(selectedTrack));
+        }
+    }
+
     return (
         <div className='App'>
             <section className='music'>
@@ -23,10 +30,10 @@ const MusicPage : React.FC = () => {
                 </div>
                 {loading && <p>Loading...</p>}
                 {error && <p>{error}</p>}
-                <ul>
+                <ul style={{ marginTop: '50px' }}>
                     {Array.isArray(tracks) && tracks.length > 0 ? (
                         tracks.map(track => (
-                            <li key={track.id}>{track.title} - {track.author}</li>
+                            <Track title={track.title} author={track.author} image={track.image} key={track.id} onClick={() => handleTrackClick(track.id)}/>
                         ))
                     ) : (
                         <p>No tracks found</p>
