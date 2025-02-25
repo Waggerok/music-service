@@ -1,0 +1,12 @@
+.progress{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+}
+
+.progress input {
+    cursor: pointer;
+    width: 500px;
+    background: #000;
+}

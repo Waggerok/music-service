@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../../store/store';
 import { setCurrentTrack } from '../../../store/reducers/trackSlice';
 import { UPLOADS_API } from '../../../API';
+import TrackProgress from '../TrackProgress/TrackProgress';
 
 const Player : React.FC = () => {
 
@@ -76,6 +77,9 @@ const Player : React.FC = () => {
                 </div>
             </div>
             {currentTrack && <audio ref={audioRef} src={audioSrc}/>}
+            <div className={styles.player__input}>
+                {currentTrack && <TrackProgress audioRef={audioRef} />}
+            </div>
         </div>
     )
 }
