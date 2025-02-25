@@ -6,6 +6,12 @@
     border-radius: 10px;
     cursor: pointer;
     margin-bottom: 10px;
+    transition: 0.5s all;
+}
+
+.track:hover {
+    transition: 0.5s all;
+    background-color: #1e1e1e;
 }
 
 .track__items {
