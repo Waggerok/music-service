@@ -23,6 +23,12 @@
 .track__items_image img {
     width: 100%;
     height: 50px;
+    transition: 0.3s all;
+}
+
+.track__items_image:hover {
+    transition: 0.3s all;
+    opacity: 0.6;
 }
 
 .track__items_text {
