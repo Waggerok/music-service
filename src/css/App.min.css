@@ -20,6 +20,34 @@
     color: white;
   }
 }
+@-webkit-keyframes playerShadows {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 1px 1px 10px black;
+            box-shadow: 1px 1px 10px black;
+  }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@keyframes playerShadows {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 1px 1px 10px black;
+            box-shadow: 1px 1px 10px black;
+  }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 body, html {
   margin: 0;
   padding: 0;

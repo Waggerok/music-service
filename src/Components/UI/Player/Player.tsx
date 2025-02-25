@@ -52,7 +52,7 @@ const Player : React.FC = () => {
     const imageSrc = currentTrack ? `${UPLOADS_API}${currentTrack.image}` : '';
 
     return (
-        <div className={styles.player}>
+        <div className={!isPlaying ? styles.player : styles.player_active}>
             <div className={styles.player__buttons}>
                 <IoIosSkipBackward onClick={() => changeTrack('prev')}/>
                     {isPlaying ? (

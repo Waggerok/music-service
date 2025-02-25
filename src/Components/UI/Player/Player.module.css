@@ -12,6 +12,21 @@
     border-radius: 10px;
 }
 
+.player_active {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #373737;
+    gap: 50px;
+    border: 2px solid #8b0ce0;
+    border-radius: 10px;
+    animation: trackShadow 0.7s infinite;
+}
+
 .player__buttons svg{
     font-size: 36px;
     cursor: pointer;
@@ -41,4 +56,16 @@
 .player__info_text_author {
     font-size: 12px;
     text-decoration: underline;
+}
+
+@keyframes trackShadow {
+    0% {
+        box-shadow: -1px -5px 10px #9b15cc;
+    }
+    50% {
+        box-shadow: 1px 1px 10px #9b15cc;
+    }
+    100% {
+        box-shadow: none;
+    }
 }
